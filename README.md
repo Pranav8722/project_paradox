@@ -73,4 +73,4 @@ MIT License - feel free to use, modify, and share.
 
 ---
 
-🧑‍💻 Created by [Pranav Patil](https://github.com/Pranav8722)
+🧑‍💻 Created by [Pranav Badaskar](https://github.com/Pranav8722)
