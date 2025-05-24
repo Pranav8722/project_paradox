@@ -28,8 +28,7 @@ Project Paradox is an innovative agriculture support platform designed to empowe
 - **Frontend**: React, Tailwind CSS, Vite
 - **Backend**: Django, Django REST Framework
 - **Database**: MySQL
-- **Deployment**: AWS
-- **Containerization**: Docker
+
 
 ## 🧭 Project Structure
 
