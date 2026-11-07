@@ -32,7 +32,7 @@ function CropRecommendation() {
         setError('');
     
         try {
-            const response = await axios.post('http://127.0.0.1:8000/api/recommend/', {
+            const response = await axios.post((import.meta.env.VITE_API_BASE_URL || '') + '/api/recommend/', {
                 location,
                 soil_type: soilType,
             });

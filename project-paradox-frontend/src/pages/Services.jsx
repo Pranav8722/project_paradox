@@ -27,7 +27,7 @@ const Services = () => {
   const [location, setLocation] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:8000/services/api/service_agents/')
+    fetch((import.meta.env.VITE_API_BASE_URL || '') + '/services/api/service_agents/')
       .then((res) => {
         if (!res.ok) throw new Error('Network error');
         return res.json();

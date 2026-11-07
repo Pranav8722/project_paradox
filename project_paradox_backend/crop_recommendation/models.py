@@ -10,7 +10,7 @@ class CropRecommendation(models.Model):
     phosphorus = models.IntegerField()
     potassium = models.IntegerField()
     weather_info = models.CharField(max_length=200)
-    suitable_crop = models.CharField(max_length=200)
+    suitable_crops = models.CharField(max_length=200)
 
     def __str__(self):
         return f"{self.location} - {self.soil_type}"

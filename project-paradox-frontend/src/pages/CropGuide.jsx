@@ -38,7 +38,7 @@ function CropGuide() {
         setArticles([]);
 
         try {
-            const response = await axios.post("http://localhost:8000/api/cropguide/fetch/", { crop });
+            const response = await axios.post((import.meta.env.VITE_API_BASE_URL || "") + "/api/cropguide/fetch/", { crop });
             setVideos(response.data.videos);
             setArticles(response.data.articles);
         } catch (err) {

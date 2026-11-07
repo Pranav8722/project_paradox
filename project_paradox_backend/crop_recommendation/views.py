@@ -12,7 +12,7 @@ def crop_recommendation(request):
 
         with connections['paradox_db'].cursor() as cursor:
             query = """
-                SELECT suitable_crop, pH, nitrogen, phosphorus, potassium 
+                SELECT suitable_crops, pH, nitrogen, phosphorus, potassium 
                 FROM crop_recommendation_croprecommendation
                 WHERE location = %s AND soil_type = %s
             """
